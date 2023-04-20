@@ -1,17 +1,154 @@
 import NextImage from 'next/image'
 import { Inter } from 'next/font/google'
 import Container from '@/components/Container'
-import '../styles/background.css';
+import { useState } from 'react';
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  return (
-    <div className="wrap">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 1024" preserveAspectRatio="meet">
-    <polygon points="163 0 0 0 0 88.61 34 121 163 0"/><polygon points="154 116 163 0 34 121 154 116"/><polygon points="413.05 0 163 0 348 67 413.05 0"/><polygon points="348 67 448 102 448 0 413.05 0 348 67"/><polygon points="312 231 448 210 448 102 348 67 312 231"/><polygon points="348 67 163 0 154 116 348 67"/><polygon points="312 231 348 67 154 116 312 231"/><polygon points="154 116 34 121 45.77 233.64 154 116"/><polygon points="48 231 312 231 154 116 48 231"/><polygon points="0 88.61 0 160 34 121 0 88.61"/><polygon points="34 121 0 157.86 0 330.37 62 389 34 121"/><polygon points="62 389 312 231 45.49 231 62 389"/><polygon points="201.18 411.36 312 231 209.23 295.95 201.18 411.36"/><polygon points="201.67 407.94 448 412 312 231 201.67 407.94"/><polygon points="448 412 448 210 312 231 448 412"/><polygon points="197 525 448 412 201.67 407.94 197 525"/><polygon points="62 389 197 525 209.23 295.95 62 389"/><polygon points="0 330.37 0 411.36 62 389 0 330.37"/><polygon points="27 605 197 525 62 389 27 605"/><polygon points="62 389 0 410.48 0 570.13 27 605 62 389"/><polygon points="122 786 197 525 27 605 122 786"/><polygon points="306.26 696.61 391 655.5 197 525 122 786 306.26 696.61"/><polygon points="391 655.5 448 412 197 525 391 655.5"/><polygon points="448 655.5 448 412 391 655.5 448 655.5"/><polygon points="448 837 448 655.5 391 655.5 448 837"/><polygon points="306.26 696.61 279 938 448 837 306.26 696.61"/><polygon points="306.26 696.61 448 837 391 655.5 306.26 696.61"/><polygon points="279 938 306.26 696.61 122 786 279 938"/><polygon points="122 786 0 740.91 0 861.44 16.25 913 122 786"/><polygon points="27 605 0 624.2 0 740.91 122 786 27 605"/><polygon points="0 570.13 0 624.2 27 605 0 570.13"/><polygon points="16.25 913 279 938 122 786 16.25 913"/><polygon points="0 952.43 0 1024 166 1024 16.25 913 0 952.43"/><polygon points="0 861.44 0 952.43 16.25 913 0 861.44"/><polygon points="16.25 913 162.7 1024 214.13 1024 279 938 16.25 913"/><polygon points="214.13 1024 448 1024 279 938 214.13 1024"/><polygon points="448 1024 448 837 279 938 448 1024"/></svg>
+  const [hovered, setHovered] = useState(false);
 
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+  return (
+    <>
+    <style>{`
+    		body {
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(to bottom right, #00595c, #004d4f, #00404c, #00334a, #002642);
+          overflow: hidden;
+        }
+    
+        .triangle {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-left: 30px solid transparent;
+          border-right: 30px solid transparent;
+          border-bottom: 50px solid #fff;
+          }
+          .triangle:nth-of-type(1) {
+          top: 30%;
+          left: 10%;
+          animation-delay: -1s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          .triangle:nth-of-type(2) {
+          top: 20%;
+          left: 40%;
+          animation-delay: -2s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          .triangle:nth-of-type(3) {
+          top: 45%;
+          left: 60%;
+          animation-delay: -3s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          .triangle:nth-of-type(4) {
+          top: 60%;
+          left: 25%;
+          animation-delay: -4s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          .triangle:nth-of-type(5) {
+          top: 75%;
+          left: 50%;
+          animation-delay: -5s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          .triangle:nth-of-type(6) {
+          top: 45%;
+          left: 80%;
+          animation-delay: -6s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          .triangle:nth-of-type(7) {
+          top: 10%;
+          left: 90%;
+          animation-delay: -7s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          .triangle:nth-of-type(8) {
+          top: 80%;
+          left: 30%;
+          animation-delay: -8s;
+          transform: translate(-50%, -50%) rotate(60deg);
+          }
+          @keyframes float {
+          0% {
+          transform: translateY(0);
+          }
+          50% {
+          transform: translateY(-20px);
+          }
+          100% {
+          transform: translateY(0);
+          }
+        }
+        
+    `}</style>
+<div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="0,0 50,50 0,100"></polygon>
+		</svg>
+	</div>
+
+	<div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,0 100,0 100,100"></polygon>
+		</svg>
+	</div>
+
+	<div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="0,50 50,100 0,100"></polygon>
+		</svg>
+	</div>
+
+	<div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,50 100,50 100,100"></polygon>
+		</svg>
+	</div>
+  <div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,50 100,50 100,100"></polygon>
+		</svg>
+	</div>
+  <div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,50 100,50 100,100"></polygon>
+		</svg>
+	</div>
+  <div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,50 100,50 100,100"></polygon>
+		</svg>
+	</div>
+  <div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,50 100,50 100,100"></polygon>
+		</svg>
+	</div>
+  <div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,50 100,50 100,100"></polygon>
+		</svg>
+	</div>
+  <div className="triangle">
+		<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+			<polygon points="50,50 100,50 100,100"></polygon>
+		</svg>
+	</div>
+  
 
     <Container>
       {/* #2962ff */}
@@ -28,6 +165,6 @@ export default function Home() {
       </div>
 
     </Container>
-    </div>
+    </>
   )
 }
