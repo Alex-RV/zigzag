@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 body {
   background: linear-gradient(to bottom, #020e6e, #059613);
-}
-/* body {
-  background: #000;
 } */
+body {
+  background: #000;
+}
 
 .wrap {
   position: absolute;
