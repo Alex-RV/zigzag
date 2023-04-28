@@ -26,7 +26,7 @@ export default function Home() {
     {/* Mobile version */}
     <div className='flex flex-col md:hidden'>
       <div className='flex flex-col w-full items-center justify-center'>
-        <h1 className='textName  sm:text-8xl text-center'>
+        <h1 className='textName text-8xl text-center'>
           ZIGZAG HACKS
         </h1>
       </div>
