@@ -19,7 +19,7 @@ export default function Container(props) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>{meta.title}</title>
     </Head>
-    <div className="flex fixed flex-col justify-center text-white bg-black w-full ">
+    <div className="flex fixed flex-col justify-center text-white bg-black w-full z-10">
     <nav className="flex top-0 left-0 right-0 fixed items-center justify-between w-full bg-black px-5 sm:px-10 pt-4 sm:pt-5 pb-2 sm:pb-3">
       <div className="flex flex-row items-center">
         <NextImage width={40} height={40} src={"/logo.svg"} alt={"bg"} />
