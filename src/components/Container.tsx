@@ -16,24 +16,29 @@ export default function Container(props) {
   return (
       <>
     <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>{meta.title}</title>
     </Head>
-    <div className='sm:hidden'>
-    </div>
-    
     <div className="flex fixed flex-col justify-center text-white bg-black w-full ">
-      <nav className="flex top-0 left-0 right-0 fixed items-center justify-between w-full bg-black px-10 pt-5 pb-2 sm:pb-3">
-          <div className='flex flex-row items-center'>
-              <NextImage width={40} height={40} src={'/logo.svg'} alt={'bg'}/> 
-              <NextLink className='textNavName mx-3 text-3xl' href="/">ZIGZAG Hacks</NextLink>
-          </div>
-          <div className='flex flex-row gap-5 items-center '>
-            <NextLink className='textNav text-3xl' href={'/#about'}>About</NextLink>
-            <NextLink className='textNav text-3xl' href={''}>Register</NextLink>
-          </div>
-      </nav>
+    <nav className="flex top-0 left-0 right-0 fixed items-center justify-between w-full bg-black px-5 sm:px-10 pt-4 sm:pt-5 pb-2 sm:pb-3">
+      <div className="flex flex-row items-center">
+        <NextImage width={40} height={40} src={"/logo.svg"} alt={"bg"} />
+        <NextLink className="textNavName mx-3 text-xl sm:text-3xl hidden sm:block" href="/">
+  ZIGZAG Hacks
+</NextLink>
+
+      </div>
+      <div className="flex flex-row gap-4 sm:gap-5 items-center ">
+        <NextLink className="textNav text-xl sm:text-3xl" href={"/#about"}>
+          About
+        </NextLink>
+        <NextLink className="textNav text-xl sm:text-3xl" href={""}>
+          Register
+        </NextLink>
+      </div>
+    </nav>
     </div>
-    <main className="flex flex-col px-8  bg-black">
+    <main className="flex flex-col px-4 sm:px-8 bg-black">
       {children}
       <Footer />
     </main>
