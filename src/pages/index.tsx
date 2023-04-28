@@ -1,12 +1,6 @@
 import NextImage from 'next/image'
 import Container from '@/components/Container'
 import { useState } from 'react';
-import { Inter } from 'next/font/google'
-
-const inter = Inter({
-  weight: ['800'],
-  subsets: ['latin'],
-})
 
 export default function Home() {
   return (
