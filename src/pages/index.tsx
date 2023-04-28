@@ -17,7 +17,7 @@ export default function Home() {
         <div className='flex flex-row'>
           <div className="w-2/3 items-center justify-center flex flex-col">
             <NextImage width={1000} height={1000} src={'/bg_zigzag.svg'} alt={'bg'}/> 
-            <button className='bg-[#D8DB4A] rounded-2xl  self-center text-center'><h1 className='textRegisterNow p-1 px-4 '>Register now</h1></button>       
+            <button className='bg-[#D8DB4A] rounded-2xl  self-center text-center  transform transition duration-150 ease-in-out cursor-pointer hover:scale-105'><h1 className='textRegisterNow p-1 px-4 active:scale-95 transform transition duration-150 ease-in-out cursor-pointer '>Register now</h1></button>       
           </div>
           <div className='flex flex-col w-1/3 items-center justify-center'>
             <h1 className='textName text-8xl'>

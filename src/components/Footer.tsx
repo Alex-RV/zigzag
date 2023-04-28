@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="w-full max-w-7xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4 justify-center items-center">
           <Link
-            href="/about"
+            href="/#about"
             className="text-[#BEBCAD] text-2xl font-extrabold hover:text-gray-600 transition"
           >
             About
@@ -18,6 +18,12 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4 justify-center items-center">
             <Image width={150} height={150} src={'/logo.svg'} alt={'bg'}/> 
+            <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/alex-riabov-v/" className="text-[#BEBCAD] text-sm font-extrabold hover:text-gray-600 transition">
+                @2023 Alex-RV
+            </Link>
         </div>
         <div className="flex flex-col space-y-4 justify-center items-center">
           <Link
