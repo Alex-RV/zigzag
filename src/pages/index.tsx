@@ -20,14 +20,14 @@ export default function Home() {
             <button className='bg-[#D8DB4A] rounded-2xl  self-center text-center'><h1 className='p-1 px-4 text-2xl shadow-2xl'>Register now</h1></button>       
           </div>
           <div className='flex flex-col w-1/3 items-center justify-center'>
-            <h1 className={` text-white text-7xl text-center  italic stroke-yellow-400 stroke-2`}>
+            <h1 className='textName text-8xl'>
               ZIGZAG HACKS
             </h1>
           </div>
         </div>
         <div className='flex flex-col items-center justify-center mx-16 w-full'>
           <div className='flex flex-col mt-12'>
-            <h1 className='text-7xl text-[#D8DB4A]'>About</h1>
+            <h1 className='textAbout '>About</h1>
           </div>
           <div className='flex flex-col mt-2'>
 
