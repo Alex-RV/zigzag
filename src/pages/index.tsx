@@ -13,11 +13,11 @@ export default function Home() {
     <>
     {/* bg-[url('/background_wo_bg.svg')] bg-cover bg-center */}
     <Container>
-      <div className="flex flex-col max-w-7xl px-4 w-full mt-14">
+      <div className="flex flex-col max-w-7xl px-4 w-full mt-14 mb-24">
         <div className='flex flex-row'>
           <div className="w-2/3 items-center justify-center flex flex-col">
             <NextImage width={1000} height={1000} src={'/bg_zigzag.svg'} alt={'bg'}/> 
-            <button className='bg-[#D8DB4A] rounded-2xl  self-center text-center'><h1 className='p-1 px-4 text-2xl shadow-2xl'>Register now</h1></button>       
+            <button className='bg-[#D8DB4A] rounded-2xl  self-center text-center'><h1 className='textRegisterNow p-1 px-4 '>Register now</h1></button>       
           </div>
           <div className='flex flex-col w-1/3 items-center justify-center'>
             <h1 className='textName text-8xl'>
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         <div className='flex flex-col items-center justify-center mx-16 w-full'>
           <div className='flex flex-col mt-12'>
-            <h1 className='textAbout '>About</h1>
+            <h1 id='about' className='textAbout '>About</h1>
           </div>
           <div className='flex flex-col mt-2'>
 
@@ -37,8 +37,8 @@ export default function Home() {
             </div>
 
             <div className='flex flex-col mt-10'>
-              <h2 className='flex text-5xl text-[#D8DB4A]'>What if I can't code?</h2>
-              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>That's fine! You will always have peers and staff to ask for help. Additionally, we are working to create resources and guides for beginners just like you!</article>
+              <h2 className='flex text-5xl text-[#D8DB4A]'>What if I can not code?</h2>
+              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>That is fine! You will always have peers and staff to ask for help. Additionally, we are working to create resources and guides for beginners just like you!</article>
             </div>
 
             <div className='flex flex-col mt-10'>
@@ -53,7 +53,7 @@ export default function Home() {
             
             <div className='flex flex-col mt-10'>
               <h2 className='flex text-5xl text-[#D8DB4A]'>When and Where?</h2>
-              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>The event will begin on June 25th, 2023, and the second day will be held in the San Francisco Main Library's Latino Room. You can find more details in the schedule below.</article>
+              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>The event will begin on June 25th, 2023, and the second day will be held in the San Francisco Main Library&rsquo;s Latino Room. You can find more details in the schedule below.</article>
             </div>
           </div>
 
