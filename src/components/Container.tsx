@@ -24,8 +24,8 @@ export default function Container(props) {
       <div className="flex flex-row items-center">
         <NextImage width={40} height={40} src={"/logo.svg"} alt={"bg"} />
         <NextLink className="textNavName mx-3 text-xl sm:text-3xl hidden sm:block" href="/">
-  ZIGZAG Hacks
-</NextLink>
+          ZIGZAG Hacks
+        </NextLink>
 
       </div>
       <div className="flex flex-row gap-4 sm:gap-5 items-center ">
