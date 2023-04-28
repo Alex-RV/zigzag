@@ -13,7 +13,7 @@ export default function Container(props) {
         ...customMeta,
       };
   return (
-      <div className="bg-[url('/zigzag.svg')] bg-cover bg-center">
+      <>
     <Head>
       <title>{meta.title}</title>
     </Head>
@@ -21,23 +21,24 @@ export default function Container(props) {
     {/* <MobileMenu/> */}
     </div>
     
-    <div className="flex flex-col justify-center mx-2">
-      <nav className="flex items-center justify-between w-full  max-w-7xl border-gray-200 dark:border-gray-700 mx-auto pt-5 pb-2 sm:pb-3 bg-white  dark:bg-mainDarkBackground bg-opacity-60 dark:text-gray-100">
+    <div className="flex fixed flex-col justify-center text-white bg-black w-full ">
+      <nav className="flex top-0 left-0 right-0 fixed items-center justify-between w-full bg-black  max-w-7xl pl-8  pt-5 pb-2 sm:pb-3">
           <div className='flex flex-row items-center'>
-            <NextLink className='text-black text-xl dark:text-white' href="/">Zigzag Hacks</NextLink>
+            <NextImage width={40} height={40} src={'/logo.svg'} alt={'bg'}/> 
+            <NextLink className=' mx-3 text-xl dark:text-white' href="/">ZIGZAG Hacks</NextLink>
           </div>
-          <div className='flex flex-row gap-5 items-center'>
+          <div className='flex flex-row gap-5 items-center '>
           {/* hover:drop-shadow-[0_35px_35px_rgba(0,0,0,0.4)] */}
-          <NextLink href={''}>Home</NextLink>
+          <NextLink className='' href={''}>Home</NextLink>
           <NextLink href={''}>About</NextLink>
           <NextLink href={''}>Register</NextLink>
           </div>
       </nav>
     </div>
-    <main className="flex flex-col px-8  ">
+    <main className="flex flex-col px-8  bg-black">
       {children}
     </main>
-    </div>
+    </>
   
   )
 }

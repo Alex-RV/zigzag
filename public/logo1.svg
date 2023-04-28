@@ -1,0 +1,21 @@
+<svg width="1049" height="971" viewBox="0 0 1049 971" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-500" y="400" width="909.711" height="80" rx="40" transform="rotate(20 100.104 262)" fill="#FBBF77">
+    <animate attributeName="x" from="-500" to="100.104" dur="3s" fill="freeze" />
+    <animate attributeName="y" from="400" to="262" dur="3s" fill="freeze" />
+  </rect>
+  
+  <rect x="500" y="300" width="1093.26" height="80" rx="40" transform="rotate(-20 -4 621.058)" fill="#E0FBFC">
+    <animate attributeName="x" from="500" to="-4" dur="3s" fill="freeze" />
+    <animate attributeName="y" from="300" to="621.058" dur="3s" fill="freeze" />
+  </rect>
+  
+  <rect x="1300" y="400" width="823.728" height="80" rx="40" transform="rotate(20 285.362 -11)" fill="#90EE90">
+    <animate attributeName="x" from="1300" to="285.362" dur="3s" fill="freeze" />
+    <animate attributeName="y" from="400" to="-11" dur="3s" fill="freeze" />
+  </rect>
+  
+  <rect x="-800" y="200" width="889.204" height="80" rx="30" transform="rotate(20 19.3616 600)" fill="#90EE90">
+    <animate attributeName="x" from="-800" to="19.3616" dur="3s" fill="freeze" />
+    <animate attributeName="y" from="200" to="600" dur="3s" fill="freeze" />
+  </rect>
+</svg>

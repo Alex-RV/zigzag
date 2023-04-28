@@ -1,21 +1,13 @@
-<svg width="1049" height="971" viewBox="0 0 1049 971" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="-500" y="400" width="909.711" height="80" rx="40" transform="rotate(20 100.104 262)" fill="#FBBF77">
-    <animate attributeName="x" from="-500" to="100.104" dur="3s" fill="freeze" />
-    <animate attributeName="y" from="400" to="262" dur="3s" fill="freeze" />
-  </rect>
-  
-  <rect x="500" y="300" width="1093.26" height="80" rx="40" transform="rotate(-20 -4 621.058)" fill="#E0FBFC">
-    <animate attributeName="x" from="500" to="-4" dur="3s" fill="freeze" />
-    <animate attributeName="y" from="300" to="621.058" dur="3s" fill="freeze" />
-  </rect>
-  
-  <rect x="1300" y="400" width="823.728" height="80" rx="40" transform="rotate(20 285.362 -11)" fill="#90EE90">
-    <animate attributeName="x" from="1300" to="285.362" dur="3s" fill="freeze" />
-    <animate attributeName="y" from="400" to="-11" dur="3s" fill="freeze" />
-  </rect>
-  
-  <rect x="-800" y="200" width="889.204" height="80" rx="30" transform="rotate(20 19.3616 600)" fill="#90EE90">
-    <animate attributeName="x" from="-800" to="19.3616" dur="3s" fill="freeze" />
-    <animate attributeName="y" from="200" to="600" dur="3s" fill="freeze" />
-  </rect>
+<svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_31_194)">
+<path d="M51.5964 33.4177L7.74446 16.467C6.57688 16.0157 5.28587 16.6551 4.86091 17.895C4.43594 19.135 5.03795 20.5061 6.20553 20.9574L50.0575 37.9081C51.2251 38.3594 52.5161 37.7201 52.941 36.4801C53.366 35.2401 52.764 33.869 51.5964 33.4177Z" fill="white"/>
+<path d="M55.4419 15.5795L1.88899 36.28C0.72141 36.7313 0.119403 38.1024 0.544366 39.3424C0.969329 40.5824 2.26034 41.2217 3.42791 40.7704L56.9808 20.0699C58.1484 19.6185 58.7504 18.2475 58.3255 17.0075C57.9005 15.7675 56.6095 15.1281 55.4419 15.5795Z" fill="#BEBCAD"/>
+<path d="M57.4715 15.3542L18.1639 0.160142C16.9963 -0.291177 15.7053 0.348166 15.2803 1.58815C14.8554 2.82814 15.4574 4.19922 16.625 4.65054L55.9326 19.8446C57.1001 20.2959 58.3911 19.6566 58.8161 18.4166C59.2411 17.1766 58.6391 15.8055 57.4715 15.3542Z" fill="#D8DB4A"/>
+<path d="M46.4996 53.3926L2.67443 36.4522C1.79875 36.1138 0.830492 36.5933 0.511769 37.5233L0.127037 38.6459C-0.191685 39.5758 0.25982 40.6042 1.1355 40.9426L44.9607 57.883C45.8364 58.2215 46.8046 57.742 47.1233 56.812L47.5081 55.6894C47.8268 54.7594 47.3753 53.7311 46.4996 53.3926Z" fill="#D8DB4A"/>
+</g>
+<defs>
+<clipPath id="clip0_31_194">
+<rect width="59" height="58" fill="white"/>
+</clipPath>
+</defs>
 </svg>

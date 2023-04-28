@@ -1,22 +1,62 @@
 import NextImage from 'next/image'
 import Container from '@/components/Container'
 import { useState } from 'react';
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+  weight: ['800'],
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
     <>
-
+    {/* bg-[url('/background_wo_bg.svg')] bg-cover bg-center */}
     <Container>
-      {/* #2962ff */}
-      {/* bg-gradient-to-b from-[#2962ff] to-green-950 */}
-      <div className="max-w-7xl px-4 ">
-        <div className="flex w-full py-6 md:py-12">
-          <div className='flex w-1/2 items-start justify-center mt-20'>
-            <h1 className="text-[8rem] font-bold text-gray-900">ZigZag</h1>
+      <div className="flex flex-col max-w-7xl px-4 w-full mt-14">
+        <div className='flex flex-row'>
+          <div className="w-2/3 items-center justify-center flex flex-col">
+            <NextImage width={1000} height={1000} src={'/bg_zigzag.svg'} alt={'bg'}/> 
+            <button className='bg-[#D8DB4A] rounded-2xl  self-center text-center'><h1 className='p-1 px-4 text-2xl shadow-2xl'>Register now</h1></button>       
           </div>
-          <div className="flex w-1/2 items-end justify-end self-end mt-40">
-            <NextImage width={250} height={250} src={'/logo.svg'} alt={'logo'}/>
+          <div className='flex flex-col w-1/3 items-center justify-center'>
+            <h1 className={` text-white text-7xl text-center  italic stroke-yellow-400 stroke-2`}>
+              ZIGZAG HACKS
+            </h1>
           </div>
+        </div>
+        <div className='flex flex-col items-center justify-center mx-16 w-full'>
+          <div className='flex flex-col mt-12'>
+            <h1 className='text-7xl text-[#D8DB4A]'>About</h1>
+          </div>
+          <div className='flex flex-col mt-2'>
+
+            <div className='flex flex-col mt-10'>
+              <h2 className='flex text-5xl text-[#D8DB4A]'>What is Zigzag Hacks?</h2>
+              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>Zigzag Hacks is a upcoming 2 day hackathon for high school students and graduating high school students. Our mission is the foster the computer science skills of the for everyone while leaving a good first impression on newcomers. Teamwork is encouraged, and anyone is invited from beginners with zero experience to advanced programmers. The first day will be entirely online while the second day is in person. Watch out! More information will follow. For questions, email us at zigzaghacks@outlook.com</article>
+            </div>
+
+            <div className='flex flex-col mt-10'>
+              <h2 className='flex text-5xl text-[#D8DB4A]'>What if I can't code?</h2>
+              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>That's fine! You will always have peers and staff to ask for help. Additionally, we are working to create resources and guides for beginners just like you!</article>
+            </div>
+
+            <div className='flex flex-col mt-10'>
+              <h2 className='flex text-5xl text-[#D8DB4A]'>What is a Hackathon?</h2>
+              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>A hackathon is a community event where teams of programmers and designers of all backgrounds and skill levels gather to experiment and create.</article>
+            </div>
+
+            <div className='flex flex-col mt-10'>
+              <h2 className='flex text-5xl text-[#D8DB4A]'>Is it free?</h2>
+              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>Yes, of course! Food, admission, everything will be free!</article>
+            </div>
+            
+            <div className='flex flex-col mt-10'>
+              <h2 className='flex text-5xl text-[#D8DB4A]'>When and Where?</h2>
+              <article className='flex text-2xl text-[#BEBCAD] mt-2 ml-2'>The event will begin on June 25th, 2023, and the second day will be held in the San Francisco Main Library's Latino Room. You can find more details in the schedule below.</article>
+            </div>
+          </div>
+
         </div>
       </div>
 
