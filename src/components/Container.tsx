@@ -27,7 +27,7 @@ export default function Container(props) {
         {/* <div className='max-w-7xl'> */}
           <div className='flex flex-row items-center'>
               <NextImage width={40} height={40} src={'/logo.svg'} alt={'bg'}/> 
-              <NextLink className='textNav mx-3 text-3xl ' href="/">ZIGZAG Hacks</NextLink>
+              <NextLink className='textNavName mx-3 text-3xl' href="/">ZIGZAG Hacks</NextLink>
           </div>
           <div className='flex flex-row gap-5 items-center '>
             {/* <NextLink className='textNav text-3xl' href={''}>Home</NextLink> */}
