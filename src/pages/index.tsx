@@ -6,14 +6,13 @@ import Timeline from '@/components/Timeline';
 export default function Home() {
   return (
     <>
-    {/* bg-[url('/background_wo_bg.svg')] bg-cover bg-center */}
     <Container>
-      <div className="flex flex-col max-w-screen-xl px-2 w-full mt-14 mb-20">
+      <div className="flex flex-col  px-2 w-full mt-14 mb-20">
         {/* Desktop version */}
         <div className='hidden md:flex flex-row'>
           <div className="w-2/3 items-center justify-center flex flex-col">
-            <NextImage width={1000} height={1000} src={'/bg_zigzag.svg'} alt={'bg'}/> 
-            <button className='bg-[#D8DB4A] rounded-2xl  self-center text-center  transform transition duration-150 ease-in-out cursor-pointer hover:scale-105'>
+            <NextImage width={870} height={870} src={'/bg_zigzag.svg'} alt={'bg'}/> 
+            <button className='bg-[#D8DB4A] rounded-2xl self-center text-center  transform transition duration-150 ease-in-out cursor-pointer hover:scale-105'>
               <h1 className='textRegisterNow p-1 px-4 active:scale-95 transform transition duration-150 ease-in-out cursor-pointer'>Register now</h1>
             </button>       
           </div>
