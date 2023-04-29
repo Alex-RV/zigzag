@@ -22,7 +22,9 @@ export default function Container(props) {
     <div className="flex fixed flex-col justify-center text-white bg-black w-full z-10">
     <nav className="flex top-0 left-0 right-0 fixed items-center justify-between w-full bg-black px-5 sm:px-10 pt-4 sm:pt-5 pb-2 sm:pb-3">
       <div className="flex flex-row items-center">
-        <NextImage width={40} height={40} src={"/logo.svg"} alt={"bg"} />
+        <NextLink href="/">
+          <NextImage width={40} height={40} src={"/logo.svg"} alt={"logo"} />
+        </NextLink>
         <NextLink className="textNavName mx-3 text-xl sm:text-3xl hidden sm:block" href="/">
           ZIGZAG Hacks
         </NextLink>
