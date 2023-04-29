@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4 justify-center items-center">
           <Link
-            href="/projects"
+            href="/"
             className="text-[#BEBCAD] text-2xl font-extrabold hover:text-gray-600 transition"
           >
             Register
