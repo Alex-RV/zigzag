@@ -15,6 +15,12 @@ export default function Footer() {
           >
             About
           </Link>
+          <Link
+            href="/#schedule"
+            className="text-[#BEBCAD] text-2xl font-extrabold hover:text-gray-600 transition"
+          >
+            Schedule
+          </Link>
         </div>
         <div className="flex flex-col space-y-4 justify-center items-center">
             <Image width={120} height={120} src={'/logo.svg'} alt={'bg'}/> 

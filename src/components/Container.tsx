@@ -32,6 +32,9 @@ export default function Container(props) {
         <NextLink className="textNav text-xl sm:text-3xl" href={"/#about"}>
           About
         </NextLink>
+        <NextLink className="textNav text-xl sm:text-3xl" href={"/#schedule"}>
+          Schedule
+        </NextLink>
         <NextLink className="textNav text-xl sm:text-3xl" href={""}>
           Register
         </NextLink>
