@@ -28,14 +28,14 @@ export default function Container(props) {
         </NextLink>
 
       </div>
-      <div className="flex flex-row gap-4 sm:gap-5 items-center ">
-        <NextLink className="textNav text-xl sm:text-3xl" href={"/#about"}>
+      <div className="flex flex-row gap-4 sm:gap-5 items-center sm:tracking-[0.15rem]">
+        <NextLink className="textNav text-lg sm:text-3xl" href={"/#about"}>
           About
         </NextLink>
-        <NextLink className="textNav text-xl sm:text-3xl" href={"/#schedule"}>
+        <NextLink className="textNav text-lg sm:text-3xl" href={"/#schedule"}>
           Schedule
         </NextLink>
-        <NextLink className="textNav text-xl sm:text-3xl" href={""}>
+        <NextLink className="textNav text-lg sm:text-3xl" href={""}>
           Register
         </NextLink>
       </div>
