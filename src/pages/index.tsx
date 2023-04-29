@@ -1,6 +1,7 @@
 import NextImage from 'next/image'
 import Container from '@/components/Container'
 import { useState } from 'react';
+import Timeline from '@/components/Timeline';
 
 export default function Home() {
   return (
@@ -67,6 +68,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Timeline/>
       </div>
 
     </Container>
